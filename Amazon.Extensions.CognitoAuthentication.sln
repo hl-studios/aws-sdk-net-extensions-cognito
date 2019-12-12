@@ -1,13 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Amazon.Extensions.CognitoAuthentication", "src\Amazon.Extensions.CognitoAuthentication\Amazon.Extensions.CognitoAuthentication.csproj", "{11E95DC6-54D2-4E7F-A05B-4C40C3B6FA49}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Amazon.Extensions.CognitoAuthentication.IntegrationTests", "test\Amazon.Extensions.CognitoAuthentication.IntegrationTests\Amazon.Extensions.CognitoAuthentication.IntegrationTests.csproj", "{198278E6-752A-47AB-8AF2-4E8E3C5633BF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Amazon.Extensions.CognitoAuthentication.UnitTests", "test\Amazon.Extensions.CognitoAuthentication.UnitTests\Amazon.Extensions.CognitoAuthentication.UnitTests.csproj", "{4A06044A-0043-4EB1-B1DB-F37B2E76FF84}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AWSSDK.Core.Net45", "..\aws-sdk-net\sdk\src\Core\AWSSDK.Core.Net45.csproj", "{FFFC08A5-BC79-4AA7-9F0E-B9D547EBC059}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AWSSDK.CognitoIdentity.Net45", "..\aws-sdk-net\sdk\src\Services\CognitoIdentity\AWSSDK.CognitoIdentity.Net45.csproj", "{0C84B2E5-A7AE-4B49-8559-37009E82D3F2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AWSSDK.CognitoIdentityProvider.Net45", "..\aws-sdk-net\sdk\src\Services\CognitoIdentityProvider\AWSSDK.CognitoIdentityProvider.Net45.csproj", "{46FB772A-901D-41C0-8FD8-5BAEA772DEFE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AWSSDK.IdentityManagement.Net45", "..\aws-sdk-net\sdk\src\Services\IdentityManagement\AWSSDK.IdentityManagement.Net45.csproj", "{76E1E965-317D-43B9-8533-5C69DBAF2C24}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AWSSDK.S3.Net45", "..\aws-sdk-net\sdk\src\Services\S3\AWSSDK.S3.Net45.csproj", "{5710737D-0814-4CBB-9449-80F6D00369F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +37,26 @@ Global
 		{4A06044A-0043-4EB1-B1DB-F37B2E76FF84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A06044A-0043-4EB1-B1DB-F37B2E76FF84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A06044A-0043-4EB1-B1DB-F37B2E76FF84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFFC08A5-BC79-4AA7-9F0E-B9D547EBC059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFFC08A5-BC79-4AA7-9F0E-B9D547EBC059}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFFC08A5-BC79-4AA7-9F0E-B9D547EBC059}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFFC08A5-BC79-4AA7-9F0E-B9D547EBC059}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C84B2E5-A7AE-4B49-8559-37009E82D3F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C84B2E5-A7AE-4B49-8559-37009E82D3F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C84B2E5-A7AE-4B49-8559-37009E82D3F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C84B2E5-A7AE-4B49-8559-37009E82D3F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46FB772A-901D-41C0-8FD8-5BAEA772DEFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46FB772A-901D-41C0-8FD8-5BAEA772DEFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46FB772A-901D-41C0-8FD8-5BAEA772DEFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46FB772A-901D-41C0-8FD8-5BAEA772DEFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76E1E965-317D-43B9-8533-5C69DBAF2C24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76E1E965-317D-43B9-8533-5C69DBAF2C24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76E1E965-317D-43B9-8533-5C69DBAF2C24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76E1E965-317D-43B9-8533-5C69DBAF2C24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5710737D-0814-4CBB-9449-80F6D00369F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5710737D-0814-4CBB-9449-80F6D00369F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5710737D-0814-4CBB-9449-80F6D00369F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5710737D-0814-4CBB-9449-80F6D00369F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
